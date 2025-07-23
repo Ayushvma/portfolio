@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/png" href="/Favicon1.png">
+    <style>
+        table,
+        th,
+        td {
+            border-collapse: collapse;
+            border-style: outset;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label>First Name:</label>
+            <input type="text">
+    </div>
+    <br>
+    <div>
+        <label>Last Name:</label>
+        <input type="text">
+    </div>
+    <br>
+    <div>
+        <label>Mr.</label>
+        <input type="radio" , name="title" , value="Mr.">
+
+        <label>Mrs.</label>
+        <input type="radio" , name="title" , value="Mrs.">
+
+        <label>phD.</label>
+        <input type="radio" , name="title" , value="phD.">
+    </div>
+    <br>
+    <div>
+        <label>ID:</label>
+        <input type="number" , maxlength="4">
+    </div>
+    <br>
+    <div>
+        <label>Password:</label>
+        <input type="password" , maxlength="6">
+    </div>
+    <br>
+    <div>
+        <label>Email:</label>
+        <input type="email">
+    </div>
+    <br>
+    <div>
+        <label>Phone No:</label>
+        <input type="tel" , maxlength="10">
+    </div>
+    <br>
+    <div>
+        <label>Birthdate:</label>
+        <input type="date">
+    </div>
+    <br>
+    <div>
+        <label>Quantity:</label>
+        <input type="number">
+    </div>
+    <br>
+
+    <div>
+        <label for="payment-amount">Payment Amount:</label>
+        <input type="number">
+
+        <label for="payment-type">Payment Type:</label>
+        <select id="payment-type" name="payment-type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="giftcard">Gift Card</option>
+        </select>
+    </div>
+    <br>
+    <div>
+        <input type="Reset">
+        <input type="Submit">
+    </div>
+    </form>
+
+    <h3>Submitted Details</h3>
+    <table style="width: 60%;">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>ID</th>
+            <th>Quantity</th>
+            <th>Payment amount</th>
+            <th>Payment type</th>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>Dubey</td>
+            <td>1234</td>
+            <td>5</td>
+            <td>5000</td>
+            <td>MasterCard</td>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>Kohli</td>
+            <td>5678</td>
+            <td>10</td>
+            <td>10000</td>
+            <td>Visa</td>
+        </tr>
+    </table>
+</body>
+
+</html>
